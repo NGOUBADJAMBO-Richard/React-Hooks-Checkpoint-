@@ -1,0 +1,53 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.MovieCard {
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.MovieCard img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.MovieCard h2 {
+  margin: 10px 0;
+}
+
+.MovieCard p {
+  color: #555;
+}
+
+.Filter, .AddMovie {
+  margin: 20px;
+}
+
+.Filter input, .AddMovie input, .AddMovie textarea {
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.AddMovie button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+}
+
+.AddMovie button:hover {
+  background-color: #4cae4c;
+}
