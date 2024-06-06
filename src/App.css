@@ -51,3 +51,13 @@
 .AddMovie button:hover {
   background-color: #4cae4c;
 }
+
+.MovieDetails {
+  margin: 20px;
+  text-align: left;
+}
+
+.MovieDetails img {
+  max-width: 100%;
+  border-radius: 8px;
+}

@@ -1,34 +1,33 @@
 // src/components/Filter.js
-import React, { useState } from 'react';
+import React from 'react';
+
 
 const Filter = ({ setFilter }) => {
-  const [title, setTitle] = useState('');
-  const [rating, setRating] = useState('');
-
-  const handleTitleChange = (e) => {
-    setTitle(e.target.value);
-    setFilter((prev) => ({ ...prev, title: e.target.value }));
+  const handleTitleChange = (event) => {
+    setFilter((prevFilter) => ({
+      ...prevFilter,
+      title: event.target.value,
+    }));
   };
 
-  const handleRatingChange = (e) => {
-    setRating(e.target.value);
-    setFilter((prev) => ({ ...prev, rating: e.target.value }));
+  const handleRatingChange = (event) => {
+    setFilter((prevFilter) => ({
+      ...prevFilter,
+      rating: event.target.value,
+    }));
   };
 
   return (
     <div className="Filter">
       <input
         type="text"
-        placeholder="Filter by title"
-        value={title}
+        placeholder="Search by title"
         onChange={handleTitleChange}
       />
       <input
         type="number"
-        placeholder="Filter by rating"
-        value={rating}
+        placeholder="Search by rating"
         onChange={handleRatingChange}
-        step="0.1"
       />
     </div>
   );
